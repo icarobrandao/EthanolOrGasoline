@@ -16,36 +16,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func calculateButton(_ sender: Any) {
+        var result: Double = 0
+       // pega o que tem em ethanolTextfield e põe em uma variavel e depois verifica se a mesma é vazia depois à transforma em um double e coloca
         
-        var ethanolPrice: Double
-        var eth:Double = 0
-        var gasolinePrice: Double
-        var gas: Double = 0
-        var result: Double
-       
         if let ethanol = ethanolTextField.text {
-            if ethanol != ""{
-                if let ethanolDouble = Double(ethanol){
-                    eth = ethanolDouble
+            if let gasoline = gasolineTextField.text {
+                if ethanol != "" && gasoline != ""{
+                    if let ethanolDouble = Double(ethanol){
+                        if let gasolineDouble = Double(gasoline){
+                            result = ethanolDouble / gasolineDouble
+                        }
+                    }
                 }
             }
         }
         
-        if let gasoline = gasolineTextField.text {
-            if gasoline != ""{
-                if let gasolineDouble = Double(gasoline){
-                    gas = gasolineDouble
-                }
-            }
-        }
-        ethanolPrice = eth
-        gasolinePrice = gas
-        result = ethanolPrice/gasolinePrice
-        
-        if result<0.7 {
-            resultLabel.text = "You should use Ethanol!"
+        if result>=0.7 {
+            resultLabel.text = "You should use Gasoline!"
         }else {
-            resultLabel.text = "You should use Alcohol!"
+            resultLabel.text = "You should use Ethanol!"
         }
         
         
