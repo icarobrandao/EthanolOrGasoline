@@ -12,6 +12,7 @@
 		0CB631091E18B3B1008F5148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB631071E18B3B1008F5148 /* Main.storyboard */; };
 		0CB6310B1E18B3B1008F5148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6310A1E18B3B1008F5148 /* Assets.xcassets */; };
 		0CB6310E1E18B3B1008F5148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6310C1E18B3B1008F5148 /* LaunchScreen.storyboard */; };
+		0CB631161E18B564008F5148 /* Fuel-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB631151E18B564008F5148 /* Fuel-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0CB6310A1E18B3B1008F5148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB6310D1E18B3B1008F5148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB6310F1E18B3B1008F5148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB631151E18B564008F5148 /* Fuel-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fuel-icon.png"; path = "../../../../../Users/icarobrandao/Downloads/Fuel-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				0CB631031E18B3B0008F5148 /* AppDelegate.swift */,
 				0CB631051E18B3B0008F5148 /* ViewController.swift */,
+				0CB631151E18B564008F5148 /* Fuel-icon.png */,
 				0CB631071E18B3B1008F5148 /* Main.storyboard */,
 				0CB6310A1E18B3B1008F5148 /* Assets.xcassets */,
 				0CB6310C1E18B3B1008F5148 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			files = (
 				0CB6310E1E18B3B1008F5148 /* LaunchScreen.storyboard in Resources */,
 				0CB6310B1E18B3B1008F5148 /* Assets.xcassets in Resources */,
+				0CB631161E18B564008F5148 /* Fuel-icon.png in Resources */,
 				0CB631091E18B3B1008F5148 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.A-lcool-ou-Gasolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -280,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.A-lcool-ou-Gasolina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
